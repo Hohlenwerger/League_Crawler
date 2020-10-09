@@ -15,10 +15,6 @@ import os
 import time
 
 def define_driver(download_path):
-	# Define Download Path
-	if not os.path.exists(download_path):
-		os.mkdir(download_path)
-
 	# Options
 	options = ChromeOptions()
 	options.add_experimental_option("excludeSwitches", ['enable-automation'])
